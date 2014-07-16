@@ -17,13 +17,22 @@ Research the following term and summarize your findings on it two to three sente
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
-* `max`
-* `min`
-* `each`
-* `map`
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-* `reject`: [note](http://underscorejs.org/#reject)
+* `max`: iterator that finds the highest number within an array. example: if you had an array, [7, 3, 21], max would return 21. 
+
+* `min`: iterator that finds the lowest number in an array. example: if you had an array, [7, 3, 21], min would return 3. 
+
+* `each`: iterates through each item in an array. Like a for loop, but with less opportunity for error. example: if you had an array, [7, 3, 21], each would return, 7, 3, 21 using console.log(variable).
+
+* `map`: similar to each. should call a given function once, for each item in the array, in order, and return the results in a new array. example: takes array [7, 3, 21], uses a function to (2 * array), and would return a copied array of : [14, 6, 42].
+
+* `filter`: an iterator that filters an array based on some condition (less than, more than). example: would specify a condition (num < 10), and return all numbers of the array that meet the condition. passing array [7, 3, 21], would return 21. 
+[note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+* `reduce`: takes an array and reduces it to a single value, through a given function. example: would pass array through a function, which would compound the values in the array to a single value.
+[note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+* `reject`: opposite of filter. returns the numbers lying outside of whatever condition you specified. example: if you set (num < 10) within your function, reject would give you the numbers over 10.
+[note](http://underscorejs.org/#reject)
 
 Use the notes provided to help guide you explanation.
 
